@@ -7,22 +7,23 @@ app.use(cors())
 
 router.get('/', cors(), (req, res) => {
     res.json(
-        {
-            "promotions": [
-              {
-                "promotionCode": "002",
-                "promotionName": "New user promo",
-                "promotionImageUrl": "www.google.com",
-                "enabled": true
-              }
-            ],
-            "highlightedFoodCategory": {
-              "code": "0015",
-              "isEnabled": true,
-              "foodCategory": "BREAKFAST",
-              "imageUrl": "www.accelr.com"
+        [
+            {
+                'id': '001',
+                'name': 'Smith',
+                'email': 'smith@gmail.com'
+            },
+            {
+                'id': '002',
+                'name': 'Sam',
+                'email': 'sam@gmail.com'
+            },
+            {
+                'id': '003',
+                'name': 'lily',
+                'email': 'lily@gmail.com'
             }
-          }
+        ]
     )
 })
 
